@@ -24,21 +24,21 @@ $('#my_accounts').append(output);
 
 
 if ( ary_accounts.length <= 1 ){
-    for ( var i=0; i < ary_selectors.length; i++ )
+	for ( var i=0; i < ary_selectors.length; i++ )
 	{
-	  $(ary_selectors[i]).val( ary_accounts[0][i] );
+		$(ary_selectors[i]).val( ary_accounts[0][i] );
 	}
 } else {
 	$('.button_account').click(function(){
-	  var idx = $(this).index();
-	  for ( var i=0; i < ary_selectors.length; i++ )
-	  {
-	    $(ary_selectors[i]).val( ary_accounts[idx][i] );
-	  }
-	  $('#my_accounts').remove();
+		var idx = $(this).index();
+		for ( var i=0; i < ary_selectors.length; i++ )
+		{
+			$(ary_selectors[i]).val( ary_accounts[idx][i] );
+		}
+		$('#my_accounts').remove();
 	});
 
 	$('#button_close').click(function(){
-	  $("#my_accounts").remove();
+		$("#my_accounts").remove();
 	});
 }
