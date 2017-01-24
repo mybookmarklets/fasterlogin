@@ -23,7 +23,7 @@ output += '<a id="button_close" href="#">[ x close ]</a>';
 $('#my_accounts').append(output);
 
 
-if ( ary_selectors.length <= 1 ){
+if ( ary_accounts.length <= 1 ){
     for ( var i=0; i < ary_selectors.length; i++ )
 	{
 	  $(ary_selectors[i]).val( ary_accounts[0][i] );
