@@ -28,6 +28,7 @@ if ( ary_accounts.length <= 1 ){
 	{
 		$(ary_selectors[i]).val( ary_accounts[0][i] );
 	}
+	$('#my_accounts').remove();
 } else {
 	$('.button_account').click(function(){
 		var idx = $(this).index();
